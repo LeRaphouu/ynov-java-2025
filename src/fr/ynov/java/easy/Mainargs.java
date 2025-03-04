@@ -10,11 +10,25 @@ public class Mainargs {
     int choice = sc.nextInt();
 
     Scanner operator = new Scanner(System.in);
+    System.out.println("Enter un opérateur entre +,*,- : ");
+    String op = operator.next();
 
     Scanner sc1 = new Scanner(System.in);
     System.out.println("Enter second Number : ");
     int choice2 = sc1.nextInt();
 
+
+    switch (op) {
+        case "+":
+            System.out.println("the result is : " + (choice + choice2));
+            break;
+        case "-":
+            System.out.println("the result is : " + (choice - choice2));
+            break;
+        case"*":
+            System.out.println("the result is : " + (choice * choice2) );
+            break;
+    }
 
     }
 }
